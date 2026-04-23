@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIDIKHAND</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Syne:wght@800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --didik-teal: #24999e;
+            --didik-teal-light: #73d9d3;
+            --didik-pink: #f02e65; /* Warna aksen tombol/highlight */
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f4f7f6;
+            color: #1a1a1a;
+        }
+        .didik-gradient {
+            background: linear-gradient(135deg, var(--didik-teal) 0%, var(--didik-teal-light) 100%);
+        }
+        /* Style Card Khusus */
+        .floating-card {
+            background: white;
+            border: 3px solid #000;
+            box-shadow: 6px 6px 0px #000;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .floating-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 12px 12px 0px var(--didik-pink);
+            border-color: var(--didik-pink);
+        }
+        .search-bar {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .footer-didik {
+            background: #000;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="didik-gradient pt-10 pb-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <nav class="flex justify-between items-center mb-16">
+                <div class="text-2xl font-black text-white tracking-tighter uppercase font-syne">
+                    DIDIK<span class="text-black">HAND</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-full border-2 border-black bg-white overflow-hidden">
+                        <img src="https://ui-avatars.com/api/?name=Didik+Hand&background=f02e65&color=fff" alt="User">
+                    </div>
+                </div>
+            </nav>
+
+            <div class="text-center text-white mb-8">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Jagongan Digital</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-20 mb-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+            
+            <a href="https://gemini.google.com/share/ad8ac373e1e4" target="_blank" class="floating-card p-6 flex flex-col items-center text-center group">
+                <div class="mb-4 text-3xl group-hover:scale-125 transition">📰</div>
+                <span class="font-bold text-sm uppercase tracking-tighter">Berita</span>
+            </a>
+
+            <a href="https://gemini.google.com/share/ff7bbbb86f04" target="_blank" class="floating-card p-6 flex flex-col items-center text-center group">
+                <div class="mb-4 text-3xl group-hover:scale-125 transition">👤</div>
+                <span class="font-bold text-sm uppercase tracking-tighter">Karakter</span>
+            </a>
+
+            <a href="https://gemini.google.com/share/f9cb0a63e819" target="_blank" class="floating-card p-6 flex flex-col items-center text-center group">
+                <div class="mb-4 text-3xl group-hover:scale-125 transition">🎨</div>
+                <span class="font-bold text-sm uppercase tracking-tighter">Ilustrasi</span>
+            </a>
+
+            <a href="https://gemini.google.com/share/56bfcd0449a8" target="_blank" class="floating-card p-6 flex flex-col items-center text-center group">
+                <div class="mb-4 text-3xl group-hover:scale-125 transition">💖</div>
+                <span class="font-bold text-sm uppercase tracking-tighter">Pose</span>
+            </a>
+
+            <a href="https://gemini.google.com/share/84ddc6ff8c99" target="_blank" class="floating-card p-6 flex flex-col items-center text-center group">
+                <div class="mb-4 text-3xl group-hover:scale-125 transition">📂</div>
+                <span class="font-bold text-sm uppercase tracking-tighter">PPID</span>
+            </a>
+
+            <a href="https://gemini.google.com/share/bfbde1e684bd" target="_blank" class="floating-card p-6 flex flex-col items-center text-center group">
+                <div class="mb-4 text-3xl group-hover:scale-125 transition">🗣️</div>
+                <span class="font-bold text-sm uppercase tracking-tighter">Ajar Basa</span>
+            </a>
+
+            <a href="https://gemini.google.com/share/39a9c04d5ad6" target="_blank" class="floating-card p-6 flex flex-col items-center text-center group bg-black text-white">
+                <div class="mb-4 text-3xl group-hover:rotate-12 transition">💬</div>
+                <span class="font-bold text-sm uppercase tracking-tighter">Interaksi</span>
+            </a>
+
+        </div>
+
+
+    </main>
+
+    <footer class="footer-didik pt-24 pb-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-end">
+            <div>
+                <h2 class="text-6xl font-black text-white leading-none font-syne uppercase">BUKAN TAHU BULAT <br>TAPI DIBUAT <br><span class="text-[#f02e65]">DADAKAN.</span></h2>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
